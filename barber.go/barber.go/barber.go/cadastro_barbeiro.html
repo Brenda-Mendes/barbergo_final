@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cadastro de Barbeiro - Barber.Go</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" onclick="window.location.href='index.html';">
+                <img src="img/barber.go_centralizado.png" alt="Logo da Barber.Go">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="register-section container">
+            <h2>Cadastro de Barbeiro</h2>
+            <form id="register-form" onsubmit="return redirectToUserPage('barbeiro')">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" placeholder="Digite seu nome completo" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Digite seu email" required>
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" placeholder="Digite sua senha" required>
+
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Barber.Go. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

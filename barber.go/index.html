@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Barber.Go</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" onclick="window.location.href='index.html';">
+                <img src="img/barber.go_centralizado.png" alt="Logo da Barber.Go">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>Bem-vindo à Barber.Go</h1>
+            <p>Transformando sua experiência de barbearia com tecnologia e conveniência.</p>
+            <button class="btn" onclick="showLogin()">Login</button>
+            <button class="btn" onclick="showRegisterOptions()">Cadastrar-se</button>
+        </section>
+
+        <section id="login-section" class="hidden container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" placeholder="Digite seu email" required>
+
+                <label for="login-password">Senha</label>
+                <input type="password" id="login-password" placeholder="Digite sua senha" required>
+
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+        </section>
+
+        <section id="register-options" class="hidden container">
+            <h2>Escolha seu Tipo de Cadastro</h2>
+            <button class="btn" onclick="window.location.href='cadastro_cliente.html'">Sou Cliente</button>
+            <button class="btn" onclick="window.location.href='cadastro_barbeiro.html'">Sou Barbeiro</button>
+        </section>
+
+        <section class="info-section container">
+            <h2>Sobre Nós</h2>
+            <p>A Barber.Go traz inovação e praticidade para sua experiência de barbearia. Agende e gerencie seus serviços com facilidade. Na Barber.Go, acreditamos que a experiência de barbearia deve ser mais do que apenas um corte de cabelo; ela deve ser prática, inovadora e personalizada. Nossa missão é trazer conforto e eficiência para o seu dia a dia. Com uma plataforma moderna e fácil de usar, conectamos você aos melhores barbeiros da região, garantindo um atendimento de alta qualidade.</p>
+        </section>
+
+        <section class="container">
+            <h3>Barbeiros Próximos</h3>
+            <div id="map" style="height: 300px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Barber.Go. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUlc0L_eMFj7kh5NY4FSIdd-n_ywKC2fU"></script>
+</body>
+</html>
